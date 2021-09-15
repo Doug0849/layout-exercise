@@ -1,0 +1,625 @@
+/* Reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* 載入字型 */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/******************** Common CSS ********************/
+body {
+  font-family: "Nunito";
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+/* 設定區塊寬度一致並置中 */
+.container {
+  width: 95%;
+  margin: 0 auto 3rem auto;
+}
+/* 共用按鈕樣式 */
+.action {
+  color: white;
+  background: #333333;
+  border-radius: 0 50% 50% 0;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+}
+
+.background-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.favoritestlink path {
+  fill: pink;
+  stroke: pink;
+}
+
+
+/********************** Main header ********************/
+header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-toggle {
+  position: absolute;
+  display: none;
+}
+
+.nav-toggle:checked ~ .nav-menu {
+  display: block;
+}
+
+.navbar-toggle-label{
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 6px;
+  width:30px;
+  height: 24px;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #222222;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content:'';
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  top: 10px;
+}
+
+.hamburger::after {
+  top: 20px;
+}
+
+.nav-brand {
+  grid-column: 1 / 2;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 2.4rem;
+}
+
+.brand-text {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.copyright {
+  font-size: 0.5rem;
+  vertical-align: .7rem;
+}
+
+/* menu */
+.nav-menu {
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  background-color: #ffffff;
+  display: none;
+}
+
+.nav-list {
+  padding-top: 12px;
+  padding-left: 6px;
+  display: grid;
+  grid-auto-rows: 1rem;
+  grid-gap: 1.4rem;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 700;
+  position: relative;
+}
+
+/* 下拉箭頭 */
+.nav-item::after {
+  content: '';
+  margin-right: 1.5rem;
+  padding: 0px 13.5px 10px 0;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(0.125turn);
+}
+
+
+/* 功能按鈕 */
+.nav-function {
+  position: absolute;
+  top: 10px;
+  right: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: end;
+}
+
+.searchlink {
+  position: absolute;
+  top: 10px ;
+  left: 3rem ;
+}
+
+.category {
+  padding: 42px;
+  text-align: center;
+}
+
+.category-title {
+  padding: 2rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.tshirt-panel {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+}
+
+.filter {
+  grid-column: 1 / 5 ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.filter-size,
+.filter-color,
+.filter-sort {
+  padding: 10px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+.filter-size::after,
+.filter-color::after,
+.filter-sort::after {
+  content: '';
+  position: relative;
+  bottom: 4px;
+  margin-right: .5rem;
+  padding: 0px 13.5px 10px 0;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(0.125turn);
+}
+
+.products-display {
+  width: 100%;
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+}
+
+.products-tshirt-card {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  width: 100%;
+}
+
+.products-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.tshirt-img-cover {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  background: #ffffff;
+}
+
+.tshirt-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+.tshirt-img:hover {
+  opacity: 1;
+}
+
+.tshirt-favorite {
+  position: absolute;
+  z-index: 1;
+  top: 3px;
+  right: 3px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.tshirt-favorite svg {
+  margin: 7px 0;
+}
+.tshirt-favorite path {
+  fill: none;
+  stroke: black;
+}
+
+.tshirt-favorite:hover path {
+  fill: pink;
+  stroke: pink;
+}
+
+.tshirt-title {
+ margin-bottom: 5px; 
+}
+
+.tshirt-price {
+ font-weight: 800;
+}
+
+.subscription {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.subscription-label {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.subscription-img {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: auto;
+}
+
+.subscription-img img {
+  display: block;
+  position: absolute;
+  object-fit:cover;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  min-height: 250px;
+  z-index: -1;
+}
+
+.subscription-description {
+  display: inline-block;
+  width: 100%;
+  font-weight: 700;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.subscription-input {
+  display: inline-block;
+  border: 0px solid white;
+  border-radius: 1.5rem 0 0 1.5rem;
+  background-color: #ffffff;
+  min-width: 250px;
+  max-width: 900px;
+  height: 3rem;
+  width: calc(50% - 100px);
+  margin-bottom: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.subscription-button {
+  border: 0px solid white;
+  border-radius: 0 1.5rem 1.5rem 0;
+  min-width: 120px;
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.subscription-info {
+  width: 100%;
+}
+
+.copyright {
+  margin-top: 1rem;
+  font-size: .8rem;
+  text-align: center;
+}
+
+/******************* 桌機 *******************/
+
+  @media screen and (min-width:910px) {
+  .container {
+    width: 85%;
+    height: 100%;
+  }
+
+  header {
+    height: 62px;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-brand {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .brand-logo {
+    height: 4rem;
+  }
+
+  .brand-text {
+    font-size: 2rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    vertical-align: .8rem;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* menu */
+  .nav-menu {
+    all: unset;
+  }
+
+  .nav-list {
+    all: unset;
+    padding-top: 12px;
+    padding-left: 6px;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    text-align: center;
+  }
+
+  .nav-item {
+    all: unset;
+    display: inline-block;
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  /* 下拉箭頭 */
+  .nav-item::after {
+    all: unset
+  }
+
+  .navbar-toggle-label{
+    display: none;
+  }
+
+  .nav-function {
+    top: 20px;
+  }
+
+  .searchlink {
+    all: unset;
+    height: 100%;
+  }
+
+  .searchlink svg{
+    position: absolute;
+    top: 20px;
+    right: 105px;
+  }
+
+  .category {
+    padding: 90px;
+    text-align: center;
+  }
+
+  .category-title {
+    font-size: 2rem;
+  }
+
+  .category-title {
+    font-size: 2rem;
+  }
+  
+  .tshirt-title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .tshirt-price{
+    font-size: 1.2rem;
+  }
+}

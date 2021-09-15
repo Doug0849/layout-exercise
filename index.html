@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-shirt Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <!--   Navbar -->
+    <div class="container">
+      <div class="navbar">
+        <label for="nav-toggle" class="navbar-toggle-label">
+          <span class="hamburger"></span>
+        </label>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <div class="nav-brand">
+          <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14985/logo-2021.png" alt="logo"
+            class="brand-logo">
+          <h5 class="brand-text">TSHIRT STORE<span class="copyright">®</span></h5>
+        </div>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#Men" class="nav-link">Men</a></li>
+            <li class="nav-item"><a href="#Women" class="nav-link">Women</a></li>
+            <li class="nav-item"><a href="#Kids" class="nav-link">Kids</a></li>
+          </ul>
+        </div>
+        <div class="searchlink">
+          <svg class="mainNavigation-search-open-icon" xmlns="http://www.w3.org/2000/svg" width="18"
+            viewBox="0 0 227 322">
+            <g fill-rule="evenodd">
+              <path
+                d="M106.671 213.321C68.757 213.321 32.006 193.044 12.793 157.394-.696 132.366-3.632 103.583 4.528 76.348 12.687 49.112 30.964 26.685 55.992 13.196 81.02-.293 109.801-3.229 137.039 4.931 164.274 13.09 186.703 31.367 200.191 56.396 228.037 108.062 208.657 172.75 156.991 200.595 140.975 209.227 123.704 213.321 106.671 213.321zM106.377 20.413C92.252 20.413 78.264 23.912 65.48 30.801 45.155 41.755 30.313 59.969 23.687 82.087 17.06 104.206 19.444 127.58 30.398 147.906 53.012 189.864 105.544 205.6 147.503 182.989 189.461 160.376 205.199 107.843 182.586 65.884 171.632 45.559 153.418 30.716 131.3 24.09 123.092 21.631 114.71 20.413 106.377 20.413zM217.041 322C213.481 322 210.036 320.095 208.229 316.742L159.565 226.448C156.945 221.587 158.761 215.521 163.624 212.901 168.487 210.279 174.551 212.099 177.171 216.96L225.835 307.254C228.455 312.115 226.638 318.181 221.776 320.801 220.267 321.614 218.642 322 217.041 322z">
+              </path>
+            </g>
+          </svg>
+        </div>
+        <div class="nav-function">
+          <div class="favoritestlink">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31px" height="27px" viewBox="0 0 31 27">
+              <path
+                d="M21.8,2.55c1.14,0,2.21,0.28,3.2,0.82 c2.12,1.18,3.44,3.41,3.44,5.82c0,0.69-0.11,1.38-0.33,2.04l-0.02,0.07l-0.02,0.07c-0.26,1.19-1.09,2.61-2.45,4.22 c-1.17,1.38-2.7,2.86-4.57,4.42c-2.23,1.86-4.41,3.37-5.55,4.13c-1.14-0.76-3.3-2.26-5.53-4.11c-1.88-1.56-3.42-3.05-4.59-4.42 c-1.37-1.61-2.2-3.04-2.46-4.23L2.9,11.31l-0.02-0.07c-0.22-0.66-0.33-1.35-0.33-2.04c0-2.42,1.32-4.65,3.44-5.82 c1-0.55,2.07-0.83,3.2-0.83c1.98,0,3.85,0.88,5.12,2.41l1.19,1.44l1.19-1.44C17.96,3.42,19.82,2.55,21.8,2.55">
+              </path>
+            </svg>
+          </div>
+          <div class="cartlink">
+            <div class="mainNavigation-selection is-empty">
+              <a id="js-toggleSelection" class="mainNavigation-selection-link" href="/en/selection">
+                <svg class="mainNavigation-selection-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="27"
+                  viewBox="0 0 21 27">
+                  <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="#1D1D1B" stroke-width="1.7"
+                      d="M2.9487525,7 L18.0512475,7 C18.5831073,7 19.0219114,7.41631646 19.0498653,7.94744117 L19.9446022,24.9474412 C19.9736296,25.4989626 19.5500646,25.9695904 18.9985432,25.9986178 C18.9810387,25.9995391 18.963513,26 18.9459843,26 L2.05401566,26 C1.50173091,26 1.05401566,25.5522847 1.05401566,25 C1.05401566,24.9824713 1.05447655,24.9649456 1.05539783,24.9474412 L1.95013468,7.94744117 C1.97808861,7.41631646 2.41689268,7 2.9487525,7 Z">
+                    </path>
+                    <path stroke="#1D1D1B" stroke-width="1.7"
+                      d="M15,9 L15,5.44444444 C15,2.98984556 12.9852814,1 10.5,1 C8.01471863,1 6,2.98984556 6,5.44444444 L6,9">
+                    </path>
+                  </g>
+                </svg>
+              </a>
+              <div id="js-selectionHeader" class="mainNavigation-selectionContainer">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="category">
+        <h1 class="category-title">Basic T-shirts</h1>
+        <div class="tshirt-panel">
+          <div class="filter">
+            <div class="filter-size">
+              <span class="filter-size-text">Size</span>
+            </div>
+            <div class="filter-color">
+              <span class="filter-color-text">Color</span>
+            </div>
+            <div class="filter-sort">
+              <span class="filter-sort-text">Sort</span>
+            </div>
+          </div>
+          <div class="products-display">
+            <div class="products-tshirt-card">
+              <div class="tshirt-favorite"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 31 27">
+                  <path
+                    d="M21.8,2.55c1.14,0,2.21,0.28,3.2,0.82 c2.12,1.18,3.44,3.41,3.44,5.82c0,0.69-0.11,1.38-0.33,2.04l-0.02,0.07l-0.02,0.07c-0.26,1.19-1.09,2.61-2.45,4.22 c-1.17,1.38-2.7,2.86-4.57,4.42c-2.23,1.86-4.41,3.37-5.55,4.13c-1.14-0.76-3.3-2.26-5.53-4.11c-1.88-1.56-3.42-3.05-4.59-4.42 c-1.37-1.61-2.2-3.04-2.46-4.23L2.9,11.31l-0.02-0.07c-0.22-0.66-0.33-1.35-0.33-2.04c0-2.42,1.32-4.65,3.44-5.82 c1-0.55,2.07-0.83,3.2-0.83c1.98,0,3.85,0.88,5.12,2.41l1.19,1.44l1.19-1.44C17.96,3.42,19.82,2.55,21.8,2.55">
+                  </path>
+                </svg></div>
+              <div class="products-img">
+                <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="tshirt-img"
+                  class="tshirt-img-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14372/bastian-ignacio-vega-cani-9UAfLTqMoS0-unsplash__2_.png"
+                  alt="tshirt-img" class="tshirt-img">
+              </div>
+              <p class="tshirt-title">T-shirt-樣式1</p>
+              <p class="tshirt-price">NT$ 300</p>
+            </div>
+            <div class="products-tshirt-card">
+              <div class="tshirt-favorite"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 31 27">
+                  <path
+                    d="M21.8,2.55c1.14,0,2.21,0.28,3.2,0.82 c2.12,1.18,3.44,3.41,3.44,5.82c0,0.69-0.11,1.38-0.33,2.04l-0.02,0.07l-0.02,0.07c-0.26,1.19-1.09,2.61-2.45,4.22 c-1.17,1.38-2.7,2.86-4.57,4.42c-2.23,1.86-4.41,3.37-5.55,4.13c-1.14-0.76-3.3-2.26-5.53-4.11c-1.88-1.56-3.42-3.05-4.59-4.42 c-1.37-1.61-2.2-3.04-2.46-4.23L2.9,11.31l-0.02-0.07c-0.22-0.66-0.33-1.35-0.33-2.04c0-2.42,1.32-4.65,3.44-5.82 c1-0.55,2.07-0.83,3.2-0.83c1.98,0,3.85,0.88,5.12,2.41l1.19,1.44l1.19-1.44C17.96,3.42,19.82,2.55,21.8,2.55">
+                  </path>
+                </svg></div>
+              <div class="products-img">
+                <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="tshirt-img"
+                  class="tshirt-img-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14365/anomaly-WWesmHEgXDs-unsplash.jpg"
+                  alt="tshirt-img" class="tshirt-img">
+              </div>
+              <p class="tshirt-title">T-shirt-樣式2</p>
+              <p class="tshirt-price">NT$ 300</p>
+            </div>
+            <div class="products-tshirt-card">
+              <div class="tshirt-favorite"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 31 27">
+                  <path
+                    d="M21.8,2.55c1.14,0,2.21,0.28,3.2,0.82 c2.12,1.18,3.44,3.41,3.44,5.82c0,0.69-0.11,1.38-0.33,2.04l-0.02,0.07l-0.02,0.07c-0.26,1.19-1.09,2.61-2.45,4.22 c-1.17,1.38-2.7,2.86-4.57,4.42c-2.23,1.86-4.41,3.37-5.55,4.13c-1.14-0.76-3.3-2.26-5.53-4.11c-1.88-1.56-3.42-3.05-4.59-4.42 c-1.37-1.61-2.2-3.04-2.46-4.23L2.9,11.31l-0.02-0.07c-0.22-0.66-0.33-1.35-0.33-2.04c0-2.42,1.32-4.65,3.44-5.82 c1-0.55,2.07-0.83,3.2-0.83c1.98,0,3.85,0.88,5.12,2.41l1.19,1.44l1.19-1.44C17.96,3.42,19.82,2.55,21.8,2.55">
+                  </path>
+                </svg></div>
+              <div class="products-img">
+                <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="tshirt-img"
+                  class="tshirt-img-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14374/faith-yarn-hgtWvsq5e2c-unsplash.png"
+                  alt="tshirt-img" class="tshirt-img">
+              </div>
+              <p class="tshirt-title">T-shirt-樣式3</p>
+              <p class="tshirt-price">NT$ 300</p>
+            </div>
+            <div class="products-tshirt-card">
+              <div class="tshirt-favorite"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 31 27">
+                  <path
+                    d="M21.8,2.55c1.14,0,2.21,0.28,3.2,0.82 c2.12,1.18,3.44,3.41,3.44,5.82c0,0.69-0.11,1.38-0.33,2.04l-0.02,0.07l-0.02,0.07c-0.26,1.19-1.09,2.61-2.45,4.22 c-1.17,1.38-2.7,2.86-4.57,4.42c-2.23,1.86-4.41,3.37-5.55,4.13c-1.14-0.76-3.3-2.26-5.53-4.11c-1.88-1.56-3.42-3.05-4.59-4.42 c-1.37-1.61-2.2-3.04-2.46-4.23L2.9,11.31l-0.02-0.07c-0.22-0.66-0.33-1.35-0.33-2.04c0-2.42,1.32-4.65,3.44-5.82 c1-0.55,2.07-0.83,3.2-0.83c1.98,0,3.85,0.88,5.12,2.41l1.19,1.44l1.19-1.44C17.96,3.42,19.82,2.55,21.8,2.55">
+                  </path>
+                </svg></div>
+              <div class="products-img">
+                <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="tshirt-img"
+                  class="tshirt-img-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png"
+                  alt="tshirt-img" class="tshirt-img">
+              </div>
+              <p class="tshirt-title">T-shirt-樣式4</p>
+              <p class="tshirt-price">NT$ 300</p>
+            </div>
+            <div class="products-tshirt-card">
+              <div class="tshirt-favorite"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 31 27">
+                  <path
+                    d="M21.8,2.55c1.14,0,2.21,0.28,3.2,0.82 c2.12,1.18,3.44,3.41,3.44,5.82c0,0.69-0.11,1.38-0.33,2.04l-0.02,0.07l-0.02,0.07c-0.26,1.19-1.09,2.61-2.45,4.22 c-1.17,1.38-2.7,2.86-4.57,4.42c-2.23,1.86-4.41,3.37-5.55,4.13c-1.14-0.76-3.3-2.26-5.53-4.11c-1.88-1.56-3.42-3.05-4.59-4.42 c-1.37-1.61-2.2-3.04-2.46-4.23L2.9,11.31l-0.02-0.07c-0.22-0.66-0.33-1.35-0.33-2.04c0-2.42,1.32-4.65,3.44-5.82 c1-0.55,2.07-0.83,3.2-0.83c1.98,0,3.85,0.88,5.12,2.41l1.19,1.44l1.19-1.44C17.96,3.42,19.82,2.55,21.8,2.55">
+                  </path>
+                </svg></div>
+              <div class="products-img">
+                <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="tshirt-img"
+                  class="tshirt-img-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14372/bastian-ignacio-vega-cani-9UAfLTqMoS0-unsplash__2_.png"
+                  alt="tshirt-img" class="tshirt-img">
+              </div>
+              <p class="tshirt-title">T-shirt-樣式1</p>
+              <p class="tshirt-price">NT$ 300</p>
+            </div>
+            <div class="products-tshirt-card">
+              <div class="tshirt-favorite"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 31 27">
+                  <path
+                    d="M21.8,2.55c1.14,0,2.21,0.28,3.2,0.82 c2.12,1.18,3.44,3.41,3.44,5.82c0,0.69-0.11,1.38-0.33,2.04l-0.02,0.07l-0.02,0.07c-0.26,1.19-1.09,2.61-2.45,4.22 c-1.17,1.38-2.7,2.86-4.57,4.42c-2.23,1.86-4.41,3.37-5.55,4.13c-1.14-0.76-3.3-2.26-5.53-4.11c-1.88-1.56-3.42-3.05-4.59-4.42 c-1.37-1.61-2.2-3.04-2.46-4.23L2.9,11.31l-0.02-0.07c-0.22-0.66-0.33-1.35-0.33-2.04c0-2.42,1.32-4.65,3.44-5.82 c1-0.55,2.07-0.83,3.2-0.83c1.98,0,3.85,0.88,5.12,2.41l1.19,1.44l1.19-1.44C17.96,3.42,19.82,2.55,21.8,2.55">
+                  </path>
+                </svg></div>
+              <div class="products-img">
+                <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="tshirt-img"
+                  class="tshirt-img-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14365/anomaly-WWesmHEgXDs-unsplash.jpg"
+                  alt="tshirt-img" class="tshirt-img">
+              </div>
+              <p class="tshirt-title">T-shirt-樣式2</p>
+              <p class="tshirt-price">NT$ 300</p>
+            </div>
+            <div class="products-tshirt-card">
+              <div class="tshirt-favorite"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 31 27">
+                  <path
+                    d="M21.8,2.55c1.14,0,2.21,0.28,3.2,0.82 c2.12,1.18,3.44,3.41,3.44,5.82c0,0.69-0.11,1.38-0.33,2.04l-0.02,0.07l-0.02,0.07c-0.26,1.19-1.09,2.61-2.45,4.22 c-1.17,1.38-2.7,2.86-4.57,4.42c-2.23,1.86-4.41,3.37-5.55,4.13c-1.14-0.76-3.3-2.26-5.53-4.11c-1.88-1.56-3.42-3.05-4.59-4.42 c-1.37-1.61-2.2-3.04-2.46-4.23L2.9,11.31l-0.02-0.07c-0.22-0.66-0.33-1.35-0.33-2.04c0-2.42,1.32-4.65,3.44-5.82 c1-0.55,2.07-0.83,3.2-0.83c1.98,0,3.85,0.88,5.12,2.41l1.19,1.44l1.19-1.44C17.96,3.42,19.82,2.55,21.8,2.55">
+                  </path>
+                </svg></div>
+              <div class="products-img">
+                <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="tshirt-img"
+                  class="tshirt-img-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14374/faith-yarn-hgtWvsq5e2c-unsplash.png"
+                  alt="tshirt-img" class="tshirt-img">
+              </div>
+              <p class="tshirt-title">T-shirt-樣式3</p>
+              <p class="tshirt-price">NT$ 300</p>
+            </div>
+            <div class="products-tshirt-card">
+              <div class="tshirt-favorite"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 31 27">
+                  <path
+                    d="M21.8,2.55c1.14,0,2.21,0.28,3.2,0.82 c2.12,1.18,3.44,3.41,3.44,5.82c0,0.69-0.11,1.38-0.33,2.04l-0.02,0.07l-0.02,0.07c-0.26,1.19-1.09,2.61-2.45,4.22 c-1.17,1.38-2.7,2.86-4.57,4.42c-2.23,1.86-4.41,3.37-5.55,4.13c-1.14-0.76-3.3-2.26-5.53-4.11c-1.88-1.56-3.42-3.05-4.59-4.42 c-1.37-1.61-2.2-3.04-2.46-4.23L2.9,11.31l-0.02-0.07c-0.22-0.66-0.33-1.35-0.33-2.04c0-2.42,1.32-4.65,3.44-5.82 c1-0.55,2.07-0.83,3.2-0.83c1.98,0,3.85,0.88,5.12,2.41l1.19,1.44l1.19-1.44C17.96,3.42,19.82,2.55,21.8,2.55">
+                  </path>
+                </svg></div>
+              <div class="products-img">
+                <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="tshirt-img"
+                  class="tshirt-img-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png"
+                  alt="tshirt-img" class="tshirt-img">
+              </div>
+              <p class="tshirt-title">T-shirt-樣式4</p>
+              <p class="tshirt-price">NT$ 300</p>
+            </div>
+            <div class="products-tshirt-card">
+              <div class="tshirt-favorite"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 31 27">
+                  <path
+                    d="M21.8,2.55c1.14,0,2.21,0.28,3.2,0.82 c2.12,1.18,3.44,3.41,3.44,5.82c0,0.69-0.11,1.38-0.33,2.04l-0.02,0.07l-0.02,0.07c-0.26,1.19-1.09,2.61-2.45,4.22 c-1.17,1.38-2.7,2.86-4.57,4.42c-2.23,1.86-4.41,3.37-5.55,4.13c-1.14-0.76-3.3-2.26-5.53-4.11c-1.88-1.56-3.42-3.05-4.59-4.42 c-1.37-1.61-2.2-3.04-2.46-4.23L2.9,11.31l-0.02-0.07c-0.22-0.66-0.33-1.35-0.33-2.04c0-2.42,1.32-4.65,3.44-5.82 c1-0.55,2.07-0.83,3.2-0.83c1.98,0,3.85,0.88,5.12,2.41l1.19,1.44l1.19-1.44C17.96,3.42,19.82,2.55,21.8,2.55">
+                  </path>
+                </svg></div>
+              <div class="products-img">
+                <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="tshirt-img"
+                  class="tshirt-img-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14372/bastian-ignacio-vega-cani-9UAfLTqMoS0-unsplash__2_.png"
+                  alt="tshirt-img" class="tshirt-img">
+              </div>
+              <p class="tshirt-title">T-shirt-樣式1</p>
+              <p class="tshirt-price">NT$ 300</p>
+            </div>
+            <div class="products-tshirt-card">
+              <div class="tshirt-favorite"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 31 27">
+                  <path
+                    d="M21.8,2.55c1.14,0,2.21,0.28,3.2,0.82 c2.12,1.18,3.44,3.41,3.44,5.82c0,0.69-0.11,1.38-0.33,2.04l-0.02,0.07l-0.02,0.07c-0.26,1.19-1.09,2.61-2.45,4.22 c-1.17,1.38-2.7,2.86-4.57,4.42c-2.23,1.86-4.41,3.37-5.55,4.13c-1.14-0.76-3.3-2.26-5.53-4.11c-1.88-1.56-3.42-3.05-4.59-4.42 c-1.37-1.61-2.2-3.04-2.46-4.23L2.9,11.31l-0.02-0.07c-0.22-0.66-0.33-1.35-0.33-2.04c0-2.42,1.32-4.65,3.44-5.82 c1-0.55,2.07-0.83,3.2-0.83c1.98,0,3.85,0.88,5.12,2.41l1.19,1.44l1.19-1.44C17.96,3.42,19.82,2.55,21.8,2.55">
+                  </path>
+                </svg></div>
+              <div class="products-img">
+                <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="tshirt-img"
+                  class="tshirt-img-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14365/anomaly-WWesmHEgXDs-unsplash.jpg"
+                  alt="tshirt-img" class="tshirt-img">
+              </div>
+              <p class="tshirt-title">T-shirt-樣式2</p>
+              <p class="tshirt-price">NT$ 300</p>
+            </div>
+            <div class="products-tshirt-card">
+              <div class="tshirt-favorite"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 31 27">
+                  <path
+                    d="M21.8,2.55c1.14,0,2.21,0.28,3.2,0.82 c2.12,1.18,3.44,3.41,3.44,5.82c0,0.69-0.11,1.38-0.33,2.04l-0.02,0.07l-0.02,0.07c-0.26,1.19-1.09,2.61-2.45,4.22 c-1.17,1.38-2.7,2.86-4.57,4.42c-2.23,1.86-4.41,3.37-5.55,4.13c-1.14-0.76-3.3-2.26-5.53-4.11c-1.88-1.56-3.42-3.05-4.59-4.42 c-1.37-1.61-2.2-3.04-2.46-4.23L2.9,11.31l-0.02-0.07c-0.22-0.66-0.33-1.35-0.33-2.04c0-2.42,1.32-4.65,3.44-5.82 c1-0.55,2.07-0.83,3.2-0.83c1.98,0,3.85,0.88,5.12,2.41l1.19,1.44l1.19-1.44C17.96,3.42,19.82,2.55,21.8,2.55">
+                  </path>
+                </svg></div>
+              <div class="products-img">
+                <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="tshirt-img"
+                  class="tshirt-img-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14374/faith-yarn-hgtWvsq5e2c-unsplash.png"
+                  alt="tshirt-img" class="tshirt-img">
+              </div>
+              <p class="tshirt-title">T-shirt-樣式3</p>
+              <p class="tshirt-price">NT$ 300</p>
+            </div>
+            <div class="products-tshirt-card">
+              <div class="tshirt-favorite"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 31 27">
+                  <path
+                    d="M21.8,2.55c1.14,0,2.21,0.28,3.2,0.82 c2.12,1.18,3.44,3.41,3.44,5.82c0,0.69-0.11,1.38-0.33,2.04l-0.02,0.07l-0.02,0.07c-0.26,1.19-1.09,2.61-2.45,4.22 c-1.17,1.38-2.7,2.86-4.57,4.42c-2.23,1.86-4.41,3.37-5.55,4.13c-1.14-0.76-3.3-2.26-5.53-4.11c-1.88-1.56-3.42-3.05-4.59-4.42 c-1.37-1.61-2.2-3.04-2.46-4.23L2.9,11.31l-0.02-0.07c-0.22-0.66-0.33-1.35-0.33-2.04c0-2.42,1.32-4.65,3.44-5.82 c1-0.55,2.07-0.83,3.2-0.83c1.98,0,3.85,0.88,5.12,2.41l1.19,1.44l1.19-1.44C17.96,3.42,19.82,2.55,21.8,2.55">
+                  </path>
+                </svg></div>
+              <div class="products-img">
+                <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="tshirt-img"
+                  class="tshirt-img-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png"
+                  alt="tshirt-img" class="tshirt-img">
+              </div>
+              <p class="tshirt-title">T-shirt-樣式4</p>
+              <p class="tshirt-price">NT$ 300</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <form action="" class="subscription-form">
+        <div class="subscription">
+          <label for="subscription-input" class="subscription-label">
+            <div class="subscription-img">
+              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png" alt=""
+                class="subscription-banner">
+            </div>
+            <div class="subscription-description">
+              <h1>Get the latest T-shirt drops in your inbox! Sign up for our Newsletter.</h1>
+            </div>
+            <input type="text" class="subscription-input" id="subscription-input" placeholder="Enter email for updates">
+            <button class="subscription-button action">SING UP!</button>
+            <div class="subscription-info">
+              <p>By registering you agree with our Integrity Policy</p>
+            </div>
+          </label>
+        </div>
+      </form>
+      <p class="copyright">© 2021 Tshirt Store. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
