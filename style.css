@@ -350,8 +350,7 @@ header {
   content: '';
   position: relative;
   bottom: 4px;
-  line-height: 13.5px;
-  padding: 0px 14px 12.5px 0;
+  padding: 0px 15px 12.5px 0;
   border-right: 2px solid;
   border-bottom: 2px solid;
   transform: rotate(0.125turn);
