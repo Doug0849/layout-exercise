@@ -467,10 +467,11 @@ header {
 
 .subscription-description {
   display: inline-block;
-  width: 100%;
+  width: 90%;
   font-weight: 700;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   font-size: 1.2rem;
+  margin: 0 20px;
 }
 
 .subscription-input {
@@ -490,9 +491,10 @@ header {
 .subscription-button {
   border: 0px solid white;
   border-radius: 0 1.5rem 1.5rem 0;
-  min-width: 120px;
+  min-width: 100px;
+  max-width: 120px;
   height: 3rem;
-  width: 3rem;
+  width: 100%;
   margin-bottom: 30px;
   font-size: 1rem;
   text-align: center;
@@ -500,6 +502,7 @@ header {
 
 .subscription-info {
   width: 100%;
+  margin: 0 20px;
 }
 
 .copyright {
